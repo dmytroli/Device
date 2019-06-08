@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="main keywords">
+	<meta name="description" content="description for site">
+
+	<title>Test Site</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	
+	<!-- bxSlider CSS file -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="preload" href="css/style.css" as="style">
+	<link rel="preload" href="js/wow.min.js" as="script">
+	
+
+</head>
+<body>
+	<div style="display: none;">
+		<include src="img/sprite.svg"></include>	
+	</div>
+	<header class="main-header">
+		<div class="container">
+			<h1 class="title title-site">Device</h1>
+			<nav class="main-navigation">
+				<div class="main-navigation__item">
+					<input type="text" placeholder="поиск по сайту">
+					<svg class="sprite-svg">
+						<use xlink:href="#search"></use>
+					</svg>
+				</div>
+				
+				<div class="main-navigation__item main-navigation__item--center">
+					<a href="#" class="main-navigation__enter">
+						<svg class="sprite-svg sprite-svg--user">
+							<use xlink:href="#user"></use>
+						</svg>
+						Войти
+					</a>
+					
+				</div>
+				<div class="main-navigation__wrapp">
+					<div class="main-navigation__item">
+						<a href="#" class="main-navigation__compare">
+							<svg class="sprite-svg sprite-svg--compare">
+								<use xlink:href="#compare"></use>
+							</svg>
+							Сравнить
+						</a>
+					</div>
+					<div class="main-navigation__item">
+						<a href="#" class="main-navigation__cart">Корзина</a>
+						<svg class="sprite-svg sprite-svg--cart">
+							<use xlink:href="#cart"></use>
+						</svg>
+					</div>
+					
+				</div>
+			</nav>
+			<ul class="header-menu">
+				<li class="li header-menuItem catalog">	<a href="#" class="header-menuLink">Каталог товаров</a>
+					<ul class="header-secondMenu header-secondMenu--close">
+						<li class="header-secondMenu__item">
+							<a href="#" class="header-secondMenu__link">Виртуальня реальность</a>
+							<a href="#" class="header-secondMenu__link">Моноподы для селфи</a>
+							<a href="#" class="header-secondMenu__link">Экшн-камеры</a>
+						</li>
+						<li class="header-secondMenu__item">
+							<a href="#" class="header-secondMenu__link">Фитнес браслеты</a>
+							<a href="#" class="header-secondMenu__link">Умные часы</a>
+						</li>
+						<li class="header-secondMenu__item">
+							<a href="#" class="header-secondMenu__link">Квадракоптеры</a>
+						</li>
+						<li class="header-secondMenu__item"></li>
+						<li class="header-secondMenu__item"></li>
+						<li class="header-secondMenu__item"></li>
+					</ul>
+				</li>
+				<li class="li header-menuItem"><a href="#" class="header-menuLink">Доставка</a></li>
+				<li class="li header-menuItem"><a href="#" class="header-menuLink">Гарантия</a></li>
+				<li class="li header-menuItem"><a href="#" class="header-menuLink">Контакты</a></li>
+			</ul>
+			<article class="slider">
+				<h2 class="visually-hidden">Slider</h2>
+				<ul class="bxslider">
+					<li>
+						<img src="img/slider-1.png" alt="slide image" width="384" height="486" />
+						<div class="bxslider__wrapp">
+							<div class="bxslider__number">01</div>
+							<h3 class="bxslider__title">Делай селфи,<br> как Бэн Стиллер!</h3>
+							<p class="bxslider__text">	Самая длинная палка для 	селфи доступна в нашем магазине.
+								Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+							</p>
+							<p class="yellow-line">подробнее</p>
+							<ul class="statistic-block">
+								<li class="statistic-block__item">
+									<p class="statistic-block__bigtext">8,5м</p>	
+									<p class="statistic-block__smalltext">Длина палки</p>	
+								</li>
+								<li class="statistic-block__item">
+									<p class="statistic-block__bigtext">5кг</p>	
+									<p class="statistic-block__smalltext">Вес палки</p>	
+								</li>
+								<li class="statistic-block__item">
+									<p class="statistic-block__bigtext">Карбон</p>	
+									<p class="statistic-block__smalltext">Материал</p>	
+								</li>
+							</ul>
+						</div>
+
+					</li>
+					<li>
+						<img src="img/slider-1.png" alt="slide image" width="384" height="486" />
+						<div class="bxslider__wrapp">
+							<div class="bxslider__number">01</div>
+							<h3 class="bxslider__title">Делай селфи,<br> как Бэн Стиллер!</h3>
+							<p class="bxslider__text">	Самая длинная палка для 	селфи доступна в нашем магазине.
+								Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+							</p>
+							<p class="yellow-line">подробнее</p>
+							<ul class="statistic-block">
+								<li class="statistic-block__item">
+									<p class="statistic-block__bigtext">8,5м</p>	
+									<p class="statistic-block__smalltext">Длина палки</p>	
+								</li>
+								<li class="statistic-block__item">
+									<p class="statistic-block__bigtext">5кг</p>	
+									<p class="statistic-block__smalltext">Вес палки</p>	
+								</li>
+								<li class="statistic-block__item">
+									<p class="statistic-block__bigtext">Карбон</p>	
+									<p class="statistic-block__smalltext">Материал</p>	
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<img src="img/slider-1.png" alt="slide image" width="384" height="486" />
+						<div class="bxslider__wrapp">
+							<div class="bxslider__number">01</div>
+							<h3 class="bxslider__title">Делай селфи,<br> как Бэн Стиллер!</h3>
+							<p class="bxslider__text">	Самая длинная палка для 	селфи доступна в нашем магазине.
+								Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+							</p>
+							<p class="yellow-line">подробнее</p>
+							<ul class="statistic-block">
+								<li class="statistic-block__item">
+									<p class="statistic-block__bigtext">8,5м</p>	
+									<p class="statistic-block__smalltext">Длина палки</p>	
+								</li>
+								<li class="statistic-block__item">
+									<p class="statistic-block__bigtext">5кг</p>	
+									<p class="statistic-block__smalltext">Вес палки</p>	
+								</li>
+								<li class="statistic-block__item">
+									<p class="statistic-block__bigtext">Карбон</p>	
+									<p class="statistic-block__smalltext">Материал</p>	
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</article>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			
+		</div>
+	</footer>
+	
+	
+	<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+	<script src="js/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
+
+
+<!--slider
+<article class="slider">
+	<h2 class="visually-hidden">Slider</h2>
+	<ul class="bxslider">
+		<li><img src="img/slide-img.jpg" alt="slide image" /></li>
+		<li><img src="img/slide-img.jpg" alt="slide image" /></li>
+		<li><img src="img/slide-img.jpg"  alt="slide image" /></li>
+	</ul>
+</article> -->
+
+<!-- paralax
+<section class="parallax-window" data-parallax="scroll" data-image-src="img/..." data-position="center -250">
+	<div class="parallax-s__wrapp">
+		<h2 class="title title--paralacs">	Our Vision
+				</h2>
+		<p class="parallax-s__text">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> 
+			sed  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<img src="img/fixed-image..." alt="" class="hands">
+	</div>
+</section>  -->
+
+<!-- paralax-mobile
+<section class="parallax-window--mobile" data-parallax="scroll" data-image-src="img/par-fon-big.jpg" data-position="center 0">
+			<div class="parallax-s__wrapp">
+				<h2 class="title title--paralacs">	Our Vision
+				</h2>
+				<p class="parallax-s__text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> 
+						sed  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<img src="img/hands.svg" alt="hands" class="hands">
+			</div>
+		</section> -->
