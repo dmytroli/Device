@@ -6,7 +6,7 @@
 	<meta name="keywords" content="main keywords">
 	<meta name="description" content="description for site">
 
-	<title>Test Site</title>
+	<title>Device</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	
 	<!-- bxSlider CSS file -->
@@ -21,15 +21,15 @@
 
 </head>
 <body>
-	<div style="display: none;">
+	<div style="display: none">
 		<include src="img/sprite.svg"></include>	
 	</div>
-	<header class="main-header">
+	<header class="main-header ">
 		<div class="container">
 			<h1 class="title title-site">Device</h1>
 			<nav class="main-navigation">
 				<div class="main-navigation__item">
-					<input type="text" placeholder="поиск по сайту">
+					<input type="text" placeholder="Поиск по сайту">
 					<svg class="sprite-svg">
 						<use xlink:href="#search"></use>
 					</svg>
@@ -54,16 +54,19 @@
 						</a>
 					</div>
 					<div class="main-navigation__item">
-						<a href="#" class="main-navigation__cart">Корзина</a>
-						<svg class="sprite-svg sprite-svg--cart">
+						<a href="#" class="main-navigation--cart">
+							<svg class="sprite-svg sprite-svg--cart">
 							<use xlink:href="#cart"></use>
 						</svg>
+						Корзина</a>
 					</div>
 					
 				</div>
 			</nav>
-			<ul class="header-menu">
-				<li class="li header-menuItem catalog">	<a href="#" class="header-menuLink">Каталог товаров</a>
+			<button class="mobile-buttonMenu">
+			</button>
+			<ul class="header-menu header-menu--close">
+				<li class="link header-menuItem catalog">	<a href="#" class="header-menuLink">Каталог товаров</a>
 					<ul class="header-secondMenu header-secondMenu--close">
 						<li class="header-secondMenu__item">
 							<a href="#" class="header-secondMenu__link">Виртуальня реальность</a>
@@ -93,9 +96,9 @@
 						<img src="img/slider-1.png" alt="slide image" width="384" height="486" />
 						<div class="bxslider__wrapp">
 							<div class="bxslider__number">01</div>
-							<h3 class="bxslider__title">Делай селфи,<br> как Бэн Стиллер!</h3>
+							<h3 class="bxslider__title">Делай селфи,<br> как Бен Стиллер!</h3>
 							<p class="bxslider__text">	Самая длинная палка для 	селфи доступна в нашем магазине.
-								Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+								<span>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</span>
 							</p>
 							<p class="yellow-line">подробнее</p>
 							<ul class="statistic-block">
@@ -104,7 +107,7 @@
 									<p class="statistic-block__smalltext">Длина палки</p>	
 								</li>
 								<li class="statistic-block__item">
-									<p class="statistic-block__bigtext">5кг</p>	
+									<p class="statistic-block__bigtext">5 кг</p>	
 									<p class="statistic-block__smalltext">Вес палки</p>	
 								</li>
 								<li class="statistic-block__item">
@@ -175,11 +178,11 @@
 						<div class="popular__text">Виртуальная <br> реальность</div>
 					</li>
 					<li class="popular__item">
-						<div class="popular__image"><img src="img/popular-2.png" alt="popular image"></div>
+						<div id="sephi" class="popular__image"><img src="img/popular-2.png" alt="popular image"></div>
 						<div class="popular__text">Моноподы <br> для селфи</div>
 					</li>
 					<li class="popular__item">
-						<div class="popular__image"><img src="img/popular-3.png" alt="popular image"></div>
+						<div id="camera" class="popular__image"><img src="img/popular-3.png" alt="popular image"></div>
 						<div class="popular__text">Экшн-камеры</div>
 					</li>
 					<li class="popular__item">
@@ -254,7 +257,7 @@
 					<p class="information__text">
 						Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 					</p>
-					<img src="img/map.jpg" alt="map" class="information__image" width="560" height="222">
+					<iframe class="information__image" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d40595.013387628256!2d28.351951711029116!3d50.512062424496065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1560101822388!5m2!1suk!2sua" width="560" height="222" style="border:0" allowfullscreen></iframe>
 					<a href="#" class="information__boldText">
 						Напишите нам
 					</a>
@@ -279,8 +282,8 @@
 					social
 				</h2>
 				<ul class="footer-center__list">
-					<li class="footer-center__item"><a href="#" class="footer-center__link">Гарантия</a></li>
 					<li class="footer-center__item"><a href="#" class="footer-center__link">Доставка</a></li>
+					<li class="footer-center__item"><a href="#" class="footer-center__link">Гарантия</a></li>
 					<li class="footer-center__item"><a href="#" class="footer-center__link">Контакты</a></li>
 				</ul>
 				<div class="footer-center__social">
@@ -340,38 +343,3 @@
 </html>
 
 
-<!--slider
-<article class="slider">
-	<h2 class="visually-hidden">Slider</h2>
-	<ul class="bxslider">
-		<li><img src="img/slide-img.jpg" alt="slide image" /></li>
-		<li><img src="img/slide-img.jpg" alt="slide image" /></li>
-		<li><img src="img/slide-img.jpg"  alt="slide image" /></li>
-	</ul>
-</article> -->
-
-<!-- paralax
-<section class="parallax-window" data-parallax="scroll" data-image-src="img/..." data-position="center -250">
-	<div class="parallax-s__wrapp">
-		<h2 class="title title--paralacs">	Our Vision
-				</h2>
-		<p class="parallax-s__text">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> 
-			sed  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		</p>
-		<img src="img/fixed-image..." alt="" class="hands">
-	</div>
-</section>  -->
-
-<!-- paralax-mobile
-<section class="parallax-window--mobile" data-parallax="scroll" data-image-src="img/par-fon-big.jpg" data-position="center 0">
-			<div class="parallax-s__wrapp">
-				<h2 class="title title--paralacs">	Our Vision
-				</h2>
-				<p class="parallax-s__text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> 
-						sed  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-				<img src="img/hands.svg" alt="hands" class="hands">
-			</div>
-		</section> -->

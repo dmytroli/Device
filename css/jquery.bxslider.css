@@ -56,7 +56,7 @@ ul.bxslider {
   font-family: Arial;
   font-weight: bold;
   color: #666;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
   position: relative;
@@ -77,8 +77,8 @@ ul.bxslider {
   display: none;
   position: absolute;
   content: '';
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   border: 1px solid #050505;
   border-radius: 50%;
   top: 50%;

@@ -32,8 +32,7 @@ gulp.task('clean', function () {
 gulp.task('phtml', function() {
   return gulp.src('*.html')
     .pipe(posthtml([include()]))
-    .pipe(rename("in.html"))
-    .pipe(gulp.dest('.')) 
+    .pipe(gulp.dest('client/')) 
 });
 
 /**/
@@ -75,7 +74,7 @@ gulp.task('svg', function() {
     return gulp.src('img/*.svg')
         .pipe(svgstore({ inlineSvg: true }))
         .pipe(rename("sprite.svg"))
-        .pipe(gulp.dest('img'))
+        .pipe(gulp.dest('client/img'))
 });
 
 /*мініфікація зображень*/
